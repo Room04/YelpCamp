@@ -38,9 +38,7 @@ Simple website built as a [codewell]() practise challange.
 * Read the comments in the `.css` files
 * Use [mobile first approach](https://www.youtube.com/watch?v=0ohtVzCSHqs)
 * Use [rem and em](https://www.youtube.com/watch?v=dHbYcAncAgQ) for sizes
-* Her's a couple of tips on Responsive web development. 👇🏿
-
-[](https://www.youtube.com/watch?v%3DVsNAuGkCpQU%26t%3D654s)
+* [Here](https://www.youtube.com/watch?v%3DVsNAuGkCpQU%26t%3D654s)'s a couple of tips on Responsive web development. 
 
 > ### Honourable mentions
 > * [More on rem and em](https://www.youtube.com/watch?v=N5wpD9Ov_To&t=104s)
