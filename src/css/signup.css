@@ -1,0 +1,13 @@
+@import url(/src/css/reset.css);
+
+/***
+**
+*
+when creating break point or a media query
+use the following
+
+@media (min-width: 640px) {...} - for small screens (mobile)
+@media (min-width: 768px) {...} - for medium screens (Tablet)
+@media (min-width: 1024px) {...} - for large screens (Desktop)
+
+*/
