@@ -3,6 +3,7 @@
 *::before,
 *::after {
    box-sizing: border-box;
+   outline: 1px palevioletred solid;
 }
 
 :root{
@@ -19,7 +20,7 @@
    --sm-spacing: 0.5rem;
 
    /* width */
-   --span-width: calc(80% / 1024px);
+   --span-width: 920px;
 
    /* fonts */
    --text-xs: 0.75rem;
