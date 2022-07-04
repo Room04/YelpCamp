@@ -126,6 +126,11 @@ section {
 /* ************ */
 
 /* campgrounds section */
+.campgrounds   {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+   gap: var(--md-spacing);
+}
 .capmground {
    margin-bottom: var(--md-spacing);
    padding: var(--md-spacing);
@@ -134,6 +139,7 @@ section {
 }
 .camp-icon {
    width: 100%;
+   height: 11.7rem;
 }
 .camp-name {
    --text-md: 1.2rem;
@@ -145,6 +151,10 @@ section {
    width: 100%;
    height: 100%;
    object-fit: cover;
+   border-radius: 5px;
+}
+:is(.camp-detail) p {
+   font-size: var(--text-sm);
 }
 :is(.camp-link) a {
    text-decoration: none;
@@ -152,6 +162,7 @@ section {
    font-size: var(--text-sm);
    display: block;
    text-align: center;
+   font-size: var(--text-xs);
 }
 :is(.camp-link) a:hover {
    color: #fff;
@@ -159,5 +170,13 @@ section {
 }
 .btn-dark-outline {
    outline: var(--accent-color-fade) .7px solid;
+}
+
+
+@media (min-width: 768px) {
+   /* .campgrounds   {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(1000px));
+   } */
 }
 /* ************ */
