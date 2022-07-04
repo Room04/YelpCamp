@@ -3,7 +3,7 @@
 *::before,
 *::after {
    box-sizing: border-box;
-   /* outline: 1px palevioletred solid; */
+   outline: 1px palevioletred solid;
 }
 
 :root{
@@ -11,14 +11,14 @@
    /* colors */
    --primary-color: #fff;
    --seondary-color: #fef3c7;
-   --accent-color: #111827;
+   --accent-color: #090c13;
    --accent-color-fade: #c9d1e0;
    --accent-color-fade-text: #a5b4cf;
 
    /* spacing */
    --lg-spacing: 2.25rem;
    --md-spacing: 1.25rem;
-   --sm-spacing: .5rem;
+   --sm-spacing: .7rem;
 
    /* width */
    --span-width: 920px;
@@ -30,10 +30,10 @@
    --text-sm: 0.875rem;
    --ln-sm: 1.25rem;
 
-   --text-md: 1rem;
+   --text-md: 1.5rem;
    --ln-md: 1.5rem;
 
-   --text-lg: 1.25rem;
+   --text-lg: 2.25rem;
    --ln-lg: 1.75rem;
 }
 

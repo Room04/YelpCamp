@@ -24,6 +24,10 @@ use the following
    padding-right: var(--md-spacing);
 }
 
+section {
+   margin-bottom: var(--lg-spacing);
+}
+
 .in-flex {
    display: flex;
    gap: var(--sm-spacing);
@@ -33,6 +37,7 @@ use the following
 .btn {
    padding: .7rem 1.5rem;
    border-radius: 3px;
+   border: none;
 }
 
 /* ************ */
@@ -81,4 +86,41 @@ use the following
    }
 }
 
+/* ************ */
+
+/* banner section */
+.jumbotron {
+   background-color: var(--accent-color-fade);
+   padding: var(--lg-spacing);
+   border-radius: 3px;
+}
+:is(.jumbotron) h1 {
+   font-size: var(--text-lg);
+}
+:is(.jumbotron) form {
+   margin-bottom: var(--md-spacing);
+   display: flex;
+   flex-direction: column;
+   gap: var(--sm-spacing);
+}
+:is(.jumbotron) input, button {
+   font-family: 'Roboto', sans-serif;
+   font-size: var(--text-sm);
+}
+.jumbotron-span {
+   max-width: 390px;
+}
+.jumbotron-link {
+   color: var(--accent-color);
+}
+.search-inp {
+   position: relative;
+}
+
+
+@media (min-width: 768px) {
+   :is(.jumbotron) form {
+      flex-direction: row;
+   }
+}
 /* ************ */
