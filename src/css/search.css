@@ -92,7 +92,7 @@ section {
 .jumbotron {
    background-color: var(--accent-color-fade);
    padding: var(--lg-spacing);
-   border-radius: 3px;
+   border-radius: 5px;
 }
 :is(.jumbotron) h1 {
    font-size: var(--text-lg);
@@ -122,5 +122,42 @@ section {
    :is(.jumbotron) form {
       flex-direction: row;
    }
+}
+/* ************ */
+
+/* campgrounds section */
+.capmground {
+   margin-bottom: var(--md-spacing);
+   padding: var(--md-spacing);
+   outline: .4px var(--accent-color-fade) solid;
+   border-radius: 5px;
+}
+.camp-icon {
+   width: 100%;
+}
+.camp-name {
+   --text-md: 1.2rem;
+   font-weight: bold;
+   font-size: var(--text-md);
+   line-height: var(--ln-sm);
+}
+:is(.camp-icon) img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+:is(.camp-link) a {
+   text-decoration: none;
+   color: var(--accent-color);
+   font-size: var(--text-sm);
+   display: block;
+   text-align: center;
+}
+:is(.camp-link) a:hover {
+   color: #fff;
+   background-color: var(--accent-color);
+}
+.btn-dark-outline {
+   outline: var(--accent-color-fade) .7px solid;
 }
 /* ************ */
