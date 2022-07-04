@@ -56,6 +56,10 @@ section {
    color: var(--accent-color-fade-text)
 }
 
+.nav-link:hover {
+   color: var(--accent-color);
+}
+
 .btn-dark {
    background-color: var(--accent-color);
    color: #fff;
@@ -107,11 +111,15 @@ section {
    font-family: 'Roboto', sans-serif;
    font-size: var(--text-sm);
 }
+:is(.jumbotron) input:focus {
+   outline: var(--accent-color) .8px solid;
+}
 .jumbotron-span {
    max-width: 390px;
 }
 .jumbotron-link {
    color: var(--accent-color);
+   font-size: var(--text-sm);
 }
 .search-inp {
    position: relative;
@@ -170,6 +178,11 @@ section {
 }
 .btn-dark-outline {
    outline: var(--accent-color-fade) .7px solid;
+   border-bottom: rgb(230, 228, 228) .8px solid;
+   border-right: rgb(230, 228, 228) .8px solid;
+}
+.btn-dark-outline:hover {
+   border: none;
 }
 
 
@@ -178,5 +191,12 @@ section {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(1000px));
    } */
+}
+/* ************ */
+
+/* footer */
+footer {
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--lg-spacing);
 }
 /* ************ */
