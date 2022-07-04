@@ -26,15 +26,59 @@ use the following
 
 .in-flex {
    display: flex;
+   gap: var(--sm-spacing);
    align-items: center;
+}
+
+.btn {
+   padding: .7rem 1.5rem;
+   border-radius: 3px;
 }
 
 /* ************ */
 
 /* navbar */
-.nav-navbar{
+.nav-navbar {
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--md-spacing);
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--accent-color-fade-text)
+}
+
+.btn-dark {
+   background-color: var(--accent-color);
+   color: #fff;
+}
+
+.hambugger  {
+   background-color: var(--accent-color-fade);
+   height: 2.2rem;
+   border-radius: 5px;
+   padding: 2px;
+}
+
+:is(.hambugger) img {
+   height: 100%;
+   width: 100%;
+}
+
+.dissapear {
+   display: none;
+}
+
+@media (min-width: 1024px) {
+   .dissapear {
+      display: block;
+   }
+   .hambugger {
+      display: none;
+   }
 }
 
 /* ************ */

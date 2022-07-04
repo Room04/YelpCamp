@@ -3,7 +3,7 @@
 *::before,
 *::after {
    box-sizing: border-box;
-   outline: 1px palevioletred solid;
+   /* outline: 1px palevioletred solid; */
 }
 
 :root{
@@ -12,12 +12,13 @@
    --primary-color: #fff;
    --seondary-color: #fef3c7;
    --accent-color: #111827;
-   --accent-color-fade: #9ca3af;
+   --accent-color-fade: #c9d1e0;
+   --accent-color-fade-text: #a5b4cf;
 
    /* spacing */
    --lg-spacing: 2.25rem;
    --md-spacing: 1.25rem;
-   --sm-spacing: 0.5rem;
+   --sm-spacing: .5rem;
 
    /* width */
    --span-width: 920px;
