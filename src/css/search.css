@@ -68,6 +68,10 @@ nav {
    color: #fff;
 }
 
+.navbar-right {
+   position: relative;
+}
+
 .hambugger  {
    background-color: var(--accent-color-fade);
    height: 2.2rem;
@@ -80,7 +84,29 @@ nav {
    width: 100%;
 }
 
+.hambug-links {
+   display: flex;
+   flex-direction: column;
+   gap: var(--sm-spacing);
+   background-color: #fff;
+   padding: var(--sm-spacing);
+   border-radius: 5px;
+   width: 10rem;
+   outline: var(--accent-color) .7px solid;
+
+   position: absolute;
+   right: 0;
+   top: calc(var(--md-spacing) + var(--md-spacing))
+}
+:is(.hambug-links) a {
+   color: var(--accent-color);
+   font-size: var(--text-sm);
+}
+
 .dissapear {
+   display: none;
+}
+.no-show {
    display: none;
 }
 
@@ -89,6 +115,9 @@ nav {
       display: block;
    }
    .hambugger {
+      display: none;
+   }
+   .hambug-links {
       display: none;
    }
 }
@@ -182,6 +211,8 @@ nav {
    display: block;
    text-align: center;
    font-size: var(--text-xs);
+
+   transition: background-color 350ms ease-in-out;
 }
 :is(.camp-link) a:hover {
    color: #fff;
