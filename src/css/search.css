@@ -124,8 +124,16 @@ nav {
    color: var(--accent-color);
    font-size: var(--text-sm);
 }
-.search-inp {
+.search-sect {
    position: relative;
+}
+.search-inp {
+   width: 100%;
+}
+.s-icon {
+   position: absolute;
+   top: var(--sm-spacing);
+   left: calc(var(--sm-spacing) - 6px)
 }
 
 
