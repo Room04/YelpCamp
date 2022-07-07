@@ -148,7 +148,7 @@ nav {
    outline: var(--accent-color) .8px solid;
 }
 .jumbotron-span {
-   max-width: 390px;
+   max-width: 400px;
 }
 .jumbotron-link {
    color: var(--accent-color);
