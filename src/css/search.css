@@ -15,7 +15,7 @@ use the following
 
 /* page reset */
 .span-max {
-   max-width: var(--span-width);
+   max-width: var(--span-width-max);
    margin: auto;
 }
 

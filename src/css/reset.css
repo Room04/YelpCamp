@@ -22,7 +22,7 @@
    --sm-spacing: .7rem;
 
    /* width */
-   --span-width: 920px;
+   --span-width-max: 920px;
 
    /* fonts */
    --text-xs: 0.75rem;
