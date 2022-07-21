@@ -16,6 +16,9 @@ use the following
 @media (min-width: 1024px) {...} - for large screens (Desktop)
  /* Desktop */
  @media (max-width: 9024px) {
+  i .camp-info-i{
+    margin-top: 10px;
+   }
 .camp-body-main{
    display: flex;
    flex-direction: row-reverse;
@@ -144,6 +147,8 @@ use the following
    color: gray;
    background-color: gray;
  }
+
+  
  } 
  /* Tablet */
  @media(max-width:900px){
@@ -248,10 +253,17 @@ use the following
     .camp-button{
       float: left;
     }
+    .camp-info{
+      color: gray;
+      /* font-weight: 00; */
+    }
 
  }
  /* Small  */
  @media(max-width: 40px){
+  *{
+    margin: 0px;
+  }
    body{
     margin: 0px;
     padding: 0px;
@@ -273,15 +285,15 @@ use the following
        /* width: 120%; */
        border: 0.1px gray solid;
        border-radius: 4px;
-       padding: 40px;
+       padding: 18px;
        margin: 15px;
     }
    
     .camp-main{
       border: 0.1px gray solid;
       border-radius: 4px;
-      padding: 40px;
-      margin: 15px;
+      padding: 18px;
+      margin: 0px;
     }
    
     .camp-main-img img{
@@ -289,8 +301,7 @@ use the following
     }
    
     .camp-body-main{
-       margin: 50px;
-   
+       margin: 0px;
     }
    
     .camp-content{
@@ -320,7 +331,7 @@ use the following
      .camp-reviews{
       border: 0.1px gray solid;
       border-radius: 4px;
-      padding: 40px;
+      padding: 18px;
       margin: 15px;
      }
    
@@ -334,7 +345,7 @@ use the following
    
     .camp-price h5{
       font-size: 15px;
-      /* font-weight:lighter; */
+
     }
    
     .camp-header h2{
