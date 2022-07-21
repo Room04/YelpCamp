@@ -1,8 +1,8 @@
 @import url(/src/css/reset.css);
 
-*{
-    /* outline: 1px green solid; */
-    margin: 0px;
+* {
+  /* outline: 1px green solid; */
+  margin: 0px;
 }
 
 /***
@@ -15,373 +15,391 @@ use the following
 @media (min-width: 768px) {...} - for medium screens (Tablet)
 @media (min-width: 1024px) {...} - for large screens (Desktop)
 
-/* Replace pixels with predefined rems */
- /* Desktop */
- @media (max-width: 9024px) {
- 
-.camp-body-main{
-   display: flex;
-   flex-direction: row-reverse;
-   margin: 0px;
-}
+/* Desktop */
+@media (max-width: 9024px) {
 
- .camp-img{
-    border: 5px gray solid;
- }
+  .camp-body-main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0rem;
+  }
 
- .camp-map img{
+  .camp-img {
+    border: var(--sm-spacing) gray solid;
+  }
+
+  .camp-map img {
     /* width: 120%; */
-    border: 0.1px gray solid;
-    border-radius: 4px;
-    padding: 40px;
-    margin: 15px;
- }
+    border: 0.006rem gray solid;
+    border-radius: 0.25rem;
+    padding: 2.5rem;
+    margin: 1rem;
+  }
 
- .camp-main{
-   border: 0.1px gray solid;
-   border-radius: 4px;
-   padding: 40px;
-   margin: 15px;
- }
+  .camp-main {
+    border: 0.006rem gray solid;
+    border-radius: 0.25rem;
+    padding: 2.5rem;
+    margin: 1rem;
+  }
 
- .camp-main-img img{
+  .camp-main-img img {
     width: 100%;
- }
+  }
 
- .camp-body-main{
-    margin: 50px;
+  .camp-body-main {
+    margin: 3.125rem;
     margin-right: 5%;
 
- }
+  }
 
- .camp-content{
-   display: flex;
-   flex-direction: column;
-   width: 100%;
- }
+  .camp-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
- .camp-title-cont{
+  .camp-title-cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
- }
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
 
- .camp-review-head{
+  .camp-review-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
- }
-  .review-time{
-    margin-right: 10px;
+  }
+
+  .review-time {
+    margin-right: 0.625rem;
+    
     display: grid;
     place-items: center;
     justify-content: right;
   }
-  
-  .camp-reviews{
-   border: 0.1px gray solid;
-   border-radius: 4px;
-   padding: 40px;
-   margin: 15px;
+
+  .camp-reviews {
+    border: 0.1px gray solid;
+    border-radius: 0.25rem;
+    padding: 2.5rem;
+    margin: 1rem;
   }
 
-  .camp-review-p{
-    color: rgb(85,85,85);
-    margin-top: 10px;
+  .camp-review-p {
+    color: rgb(85, 85, 85);
+    margin-top: 0.625rem;
   }
+
   .camp-review-hor-rule {
-   /* margin: auto; */
-   width: 100%;
-   border: 0.01px solid gray;
-   margin-top: 20px;
-   margin-bottom: 20px;
- }
-
- .camp-price{
-   display: grid;
-   place-items: center;
- }
-
- .camp-price h3{
-   font-size: 15px;
-   font-weight: 550;
-   
- }
-
- .camp-header h2{
-   margin: 0px;
-   padding: 0px;
- }
- .camp-price h3{
-   margin: 0px;
-   padding: 0px;
- }
-  
- .camp-button{
-   background-color: black;
-   display: flex;
-   flex-direction: row;
-   width: 180px;
-   padding: 5px;
-   border-radius: 3px;
-   float: right;
-   justify-content: center;
- }
-
- .main-camp-button{
-   display: grid;
-   place-items: center;
- }
-
- .camp-button .message-cta{
-   color: white;
-   display: grid;
-   place-items: center;
-   margin: 5px;
- }
- .camp-button .message-svg{
-   display: grid;
-   place-items: center;
-   margin: 5px;
- }
-
- .h-ruler{
-   margin-top: 20px;
-   margin-bottom: 20px;
-   color: gray;
-   background-color: gray;
- }
-
- .camp-info{
-  display: flex;
-  flex-direction: column;
-  color: rgb(85, 85, 85);
- }
-
- .camp-info-i{
-  margin-top: 10px;
-  font-style: italic;
- }
-
-  
- } 
- /* Tablet */
- @media(max-width:900px){
-
-  body{
-    padding: 0px;
+    /* margin: auto; */
+    width: 100%;
+    border: 0.000625rem solid gray;
+    margin-top: var(--md-spacing);
+    margin-bottom: var(--md-spacing);
   }
-    
-   .camp-body-main{
-      display: flex;
-      flex-direction: column;
-      /* flex-wrap: wrap; */
-      width: 100%;
-      margin: 0px;
-      justify-content: center;
-   }
-   
-    .camp-img{
-      width: 90%;
-      border: 5px gray solid;
-    }
-   
-    .camp-map img{
-       width: 96%;
-       border: 0.1px gray solid;
-       border-radius: 4px;
-       padding: 22px;
-       margin: 15px;
-    }
-   
-    .camp-main{
-      border: 0.1px gray solid;
-      border-radius: 4px;
-      padding: 22px;
-      /* margin: 15px; */
-      width: 96%;
-    }
-   
-    .camp-main-img img{
-       width: 100%;
-    }
-   
-    .camp-body-main{
-       margin: 50px;
-       width: 85%;
-   
-    }
-   
-    .camp-content{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-   
-    .camp-title-cont{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       margin-top: 10px;
-       margin-bottom: 10px;
-    }
-   
-    .camp-review-head{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-    }
-     .review-time{
-       margin-right: 10px;
-       text-align: left;
-     }
-     
-     .camp-reviews{
-      border: 0.1px gray solid;
-      border-radius: 4px;
-      padding: 22px;
-      margin: 15px;
-      width: 96%;
-     }
-   
-     .camp-review-hor-rule {
-      /* margin: auto; */
-      width: 100%;
-      border: 0.01px solid gray;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-   
-    .camp-price h5{
-      font-size: 15px;
-      /* font-weight:lighter; */
-    }
-   
-    .camp-header h2{
-      margin: 0px;
-      padding: 0px;
-    }
-    .camp-price h3{
-      margin: 0px;
-      padding: 0px;
-    }
-    .camp-button{
-      float: left;
-    }
-    .camp-info{
-      color: gray;
-      /* font-weight: 00; */
-    }
 
- }
- /* Small  */
- @media(max-width: 40px){
-  *{
-    margin: 0px;
-  }
-   body{
-    margin: 0px;
-    padding: 0px;
+  .camp-price {
     display: grid;
     place-items: center;
-   }
-   .camp-body-main{
-      display: flex;
-      flex-direction: column;
-      margin: 0px; 
-      justify-content: center;
-   }
-   
-    .camp-img{
-       border: 5px gray solid;
-    }
-   
-    .camp-map img{
-       /* width: 120%; */
-       border: 0.1px gray solid;
-       border-radius: 4px;
-       padding: 18px;
-       margin: 15px;
-    }
-   
-    .camp-main{
-      border: 0.1px gray solid;
-      border-radius: 4px;
-      padding: 18px;
-      margin: 0px;
-    }
-   
-    .camp-main-img img{
-       width: 100%;
-    }
-   
-    .camp-body-main{
-       margin: 0px;
-    }
-   
-    .camp-content{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-   
-    .camp-title-cont{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       margin-top: 10px;
-       margin-bottom: 10px;
-    }
-   
-    .camp-review-head{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-    }
-     .review-time{
-       margin-right: 10px;
-       text-align: left;
-     }
-     
-     .camp-reviews{
-      border: 0.1px gray solid;
-      border-radius: 4px;
-      padding: 18px;
-      margin: 15px;
-     }
-   
-     .camp-review-hor-rule {
-      /* margin: auto; */
-      width: 100%;
-      border: 0.01px solid gray;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-   
-    .camp-price h5{
-      font-size: 15px;
+  }
 
-    }
-   
-    .camp-header h2{
-      margin: 0px;
-      padding: 0px;
-    }
-    .camp-price h3{
-      margin: 0px;
-      padding: 0px;
-    }
-    .camp-button{
-      float: left;
-    }
- }
- 
- body{
-  padding: 0px;
-  margin: 0px;
+  .camp-price h3 {
+    font-size: var(--md-spacing);
+    font-weight: 450;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .camp-header h2 {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .review-time{
+    font-size: 1rem;
+    font-weight: 350;
+    color: gray;
+  }
+
+  .camp-button {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 11.25rem;
+    padding: 0.3125rem;
+    border-radius: 0.1875rem;
+    float: right;
+    justify-content: center;
+  }
+
+  .main-camp-button {
+    display: grid;
+    place-items: center;
+  }
+
+  .camp-button .message-cta {
+    color: white;
+    display: grid;
+    place-items: center;
+    margin: 0.3125rem;
+  }
+
+  .camp-button .message-svg {
+    display: grid;
+    place-items: center;
+    margin: 0.3125rem;
+  }
+
+  .h-ruler {
+    margin-top: var(--md-spacing);
+    margin-bottom: var(--md-spacing);
+    color: var(--accent-color-fade);
+    background-color: var(--accent-color-fade);
+  }
+
+  .camp-info {
+    display: flex;
+    flex-direction: column;
+    color: rgb(85, 85, 85);
+  }
+
+  .camp-info-i {
+    margin-top: 0.625rem;
+    font-style: italic;
+  }
+
+
+}
+
+/* Tablet */
+@media(max-width:900px) {
+
+  body {
+    padding: 0rem;
+  }
+
+  .camp-body-main {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    margin: 0rem;
+    justify-content: center;
+  }
+
+  .camp-img {
+    width: 90%;
+    border: 0.3125rem var(--accent-color-fade) solid;
+  }
+
+  .camp-map img {
+    width: 96%;
+    border: 0.006rem var(--accent-color-fade) solid;
+    border-radius: 0.25rem;
+    padding: 1.375rem;
+    margin: 1rem;
+  }
+
+  .camp-main {
+    border: 0.006rem var(--accent-color-fade) solid;
+    border-radius: 0.25rem;
+    padding: 1.375rem;
+    /* margin: 15px; */
+    width: 96%;
+  }
+
+  .camp-main-img img {
+    width: 100%;
+  }
+
+  .camp-body-main {
+    margin: 3.125rem;
+    width: 85%;
+
+  }
+
+  .camp-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .camp-title-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .camp-review-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .review-time {
+    margin-right: 0.625rem;
+    text-align: left;
+  }
+
+  .camp-reviews {
+    border: 0.00625rem var(--accent-color-fade) solid;
+    border-radius: 0.25rem;
+    padding: 1.375rem;
+    margin: 1rem;
+    width: 96%;
+  }
+
+  .camp-review-hor-rule {
+    /* margin: auto; */
+    width: 100%;
+    border: 0.000625rem solid var(--accent-color-fade);
+    margin-top: var(--md-spacing);
+    margin-bottom: var(--md-spacing);
+  }
+
+  .camp-price h3 {
+    font-size: var(--md-spacing);
+    font-weight: 450;
+
+  }
+
+  .camp-header h2 {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .camp-price h3 {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .camp-button {
+    float: left;
+  }
+
+  .camp-info {
+    color: gray;
+    /* font-weight: 00; */
+  }
+
+}
+
+/* Small  */
+@media(max-width: 40px) {
+  * {
+    margin: 0rem;
+  }
+
+  body {
+    margin: 0rem;
+    padding: 0rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .camp-body-main {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    justify-content: center;
+  }
+
+  .camp-img {
+    border: 0.3125rem var(--accent-color-fade) solid;
+  }
+
+  .camp-map img {
+    /* width: 120%; */
+    border: 0.00625rem var(--accent-color-fade) solid;
+    border-radius: 0.25rem;
+    padding: 1.125rem;
+    margin: 1rem;
+  }
+
+  .camp-main {
+    border: 0.00625rem var(--accent-color-fade) solid;
+    border-radius: 0.25rem;
+    padding: 1.125rem;
+    margin: 0rem;
+  }
+
+  .camp-main-img img {
+    width: 100%;
+  }
+
+  .camp-body-main {
+    margin: 0rem;
+  }
+
+  .camp-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .camp-title-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .camp-review-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .review-time {
+    margin-right: 0.625rem;
+    text-align: left;
+  }
+
+  .camp-reviews {
+    border: 0.00625rem var(--accent-color-fade) solid;
+    border-radius: 0.25rem;
+    padding: 1.125rem;
+    margin: 1rem;
+  }
+
+  .camp-review-hor-rule {
+    /* margin: auto; */
+    width: 100%;
+    border: 0.000625rem solid var(--accent-color-fade);
+    margin-top: var(--md-spacing);
+    margin-bottom: 20px;
+  }
+
+  .camp-price h3 {
+    font-size: var(--md-spacing);
+    font-weight: 450;
+  }
+
+  .camp-header h2 {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .camp-price h3 {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .camp-button {
+    float: left;
+  }
+}
+
+body {
+  padding: 0rem;
+  margin: 0rem;
   width: 100%;
   display: grid;
   place-items: center;
- }
+}
