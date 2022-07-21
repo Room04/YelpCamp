@@ -1,7 +1,7 @@
 @import url(/src/css/reset.css);
 
 *{
-    outline: 1px green solid;
+    /* outline: 1px green solid; */
     margin: 0px;
 }
 
@@ -14,11 +14,11 @@ use the following
 @media (min-width: 640px) {...} - for small screens (mobile)
 @media (min-width: 768px) {...} - for medium screens (Tablet)
 @media (min-width: 1024px) {...} - for large screens (Desktop)
+
+/* Replace pixels with predefined rems */
  /* Desktop */
  @media (max-width: 9024px) {
-  i .camp-info-i{
-    margin-top: 10px;
-   }
+ 
 .camp-body-main{
    display: flex;
    flex-direction: row-reverse;
@@ -75,7 +75,9 @@ use the following
  }
   .review-time{
     margin-right: 10px;
-    text-align: left;
+    display: grid;
+    place-items: center;
+    justify-content: right;
   }
   
   .camp-reviews{
@@ -85,6 +87,10 @@ use the following
    margin: 15px;
   }
 
+  .camp-review-p{
+    color: rgb(85,85,85);
+    margin-top: 10px;
+  }
   .camp-review-hor-rule {
    /* margin: auto; */
    width: 100%;
@@ -148,6 +154,17 @@ use the following
    background-color: gray;
  }
 
+ .camp-info{
+  display: flex;
+  flex-direction: column;
+  color: rgb(85, 85, 85);
+ }
+
+ .camp-info-i{
+  margin-top: 10px;
+  font-style: italic;
+ }
+
   
  } 
  /* Tablet */
@@ -175,14 +192,14 @@ use the following
        width: 96%;
        border: 0.1px gray solid;
        border-radius: 4px;
-       padding: 40px;
+       padding: 22px;
        margin: 15px;
     }
    
     .camp-main{
       border: 0.1px gray solid;
       border-radius: 4px;
-      padding: 40px;
+      padding: 22px;
       /* margin: 15px; */
       width: 96%;
     }
@@ -224,7 +241,7 @@ use the following
      .camp-reviews{
       border: 0.1px gray solid;
       border-radius: 4px;
-      padding: 40px;
+      padding: 22px;
       margin: 15px;
       width: 96%;
      }
@@ -359,4 +376,12 @@ use the following
     .camp-button{
       float: left;
     }
+ }
+ 
+ body{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: grid;
+  place-items: center;
  }
