@@ -1,9 +1,5 @@
 @import url(/src/css/reset.css);
 
-* {
-  /* outline: 1px green solid; */
-  margin: 0px;
-}
 
 /* Nav Bar */
 nav {
@@ -124,7 +120,7 @@ use the following
 @media (min-width: 1024px) {...} - for large screens (Desktop)
 
 /* Desktop */
-@media (max-width: 9024px) {
+@media (min-width: 1024px) {
   .yelp-footer{
     width: 100%;
     padding: 3.0rem ;
@@ -287,7 +283,7 @@ use the following
 }
 
 /* Tablet */
-@media(max-width:900px) {
+@media(max-width:1023px) {
 
   body {
     padding: 0rem;
@@ -305,7 +301,7 @@ use the following
     flex-direction: column;
     /* flex-wrap: wrap; */
     width: 100%;
-    margin: 0rem;
+    margin: auto;
     justify-content: center;
   }
 
@@ -326,7 +322,7 @@ use the following
     border: 0.006rem var(--accent-color-fade) solid;
     border-radius: 0.25rem;
     padding: 1.375rem;
-    /* margin: 15px; */
+    margin: 1rem;
     width: 96%;
   }
 
@@ -399,12 +395,28 @@ use the following
 
   .camp-button {
     float: left;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 11.25rem;
+    padding: 0.3125rem;
+    border-radius: 0.1875rem;
+    justify-content: center;
+    color: white
+  }
+  .message-cta{
+    display: grid;
+    place-items: center;
   }
 
   .camp-info {
     color: gray;
     /* font-weight: 00; */
   }
+   .yelp-footer{
+    width: 100%;
+    padding: 3rem;
+   }
 
 }
 
