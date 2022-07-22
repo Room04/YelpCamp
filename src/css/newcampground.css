@@ -11,3 +11,179 @@ use the following
 @media (min-width: 1024px) {...} - for large screens (Desktop)
 
  */
+
+/* page reset */
+.span-max {
+   --span-width: 920px;
+   max-width: var(--span-width);
+   margin: auto;
+}
+
+.mid-padding{
+   padding-left: var(--md-spacing);
+   padding-right: var(--md-spacing);
+}
+
+section {
+   margin-bottom: var(--lg-spacing);
+}
+
+.in-flex {
+   display: flex;
+   gap: var(--sm-spacing);
+   align-items: center;
+}
+
+.btn {
+   padding: .7rem 1.5rem;
+   border-radius: 3px;
+   border: none;
+}
+
+/* navbar */
+nav {
+   margin-bottom: var(--sm-spacing);
+}
+.nav-navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--md-spacing);
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--accent-color-fade-text);
+   transition: color 300ms ease-in-out;
+}
+
+.nav-link:hover {
+   color: var(--accent-color);
+}
+
+.btn-dark {
+   background-color: var(--accent-color);
+   color: #fff;
+}
+
+.navbar-right {
+   position: relative;
+}
+
+.hambugger  {
+   background-color: var(--accent-color-fade);
+   height: 2.2rem;
+   border-radius: 5px;
+   padding: 2px;
+}
+
+:is(.hambugger) img {
+   height: 100%;
+   width: 100%;
+}
+
+.hambug-links {
+   display: flex;
+   flex-direction: column;
+   gap: var(--sm-spacing);
+   background-color: #fff;
+   padding: var(--sm-spacing);
+   border-radius: 5px;
+   width: 10rem;
+   outline: var(--accent-color) .7px solid;
+
+   position: absolute;
+   right: 0;
+   top: calc(var(--md-spacing) + var(--md-spacing))
+}
+:is(.hambug-links) a {
+   color: var(--accent-color);
+   font-size: var(--text-sm);
+}
+
+.dissapear {
+   display: none;
+}
+.no-show {
+   display: none;
+}
+
+@media (min-width: 1024px) {
+   .dissapear {
+      display: block;
+   }
+   .hambugger {
+      display: none;
+   }
+   .hambug-links {
+      display: none;
+   }
+}
+
+/* ************ */
+
+/* form section */
+.ncamp-form-cont {
+   max-width: 468px;
+}
+.form-title {
+   --text-lg: 2rem;
+   font-size: var(--text-lg);
+   width: 200px;
+}
+.in-form-col {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: var(--md-spacing);
+}
+:is(.in-form-col) input {
+   --accent-color-fade: rgb(224, 224, 224);
+   height: var(--lg-spacing);
+   border-radius: 5px;
+   border: none;
+   background-color: var(--accent-color-fade);
+   padding-left: var(--md-spacing);
+   font-size: var(--text-sm);
+}
+:is(.in-form-col) input:focus {
+   outline: var(--accent-color) .7px solid;
+}
+:is(.in-form-col) label {
+   margin-bottom: var(--sm-spacing);
+   font-size: var(--text-sm);
+}
+:is(.in-form-col) #desc {
+   height: 12rem;
+   background-color: rgb(224, 224, 224);
+   border: none;
+   padding: var(--md-spacing);
+   border-radius: 5px;
+   font-family: 'Roboto', sans-serif;
+   font-size: var(--text-md);
+}
+:is(.in-form-col) #desc:focus {
+   outline: var(--accent-color) .7px solid;
+}
+.btn-block {
+   width: 100%;
+}
+
+@media (min-width: 768px) {
+   .form-title {
+      width: 100%;
+   }
+}
+@media (min-width: 1024px) {
+   .ncamp-form-cont {
+      margin: auto;
+   }
+}
+/* ************ */
+
+/* footer */
+footer {
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--lg-spacing);
+}
+/* ************ */
