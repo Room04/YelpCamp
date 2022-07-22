@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&display=swap');
 *,
 *::before,
 *::after {
    box-sizing: border-box;
+   /* outline: 1px palevioletred solid; */
 }
 
 :root{
@@ -10,16 +12,17 @@
    /* colors */
    --primary-color: #fff;
    --seondary-color: #fef3c7;
-   --accent-color: #111827;
-   --accent-color-fade: #9ca3af;
+   --accent-color: #090c13;
+   --accent-color-fade: #c9d1e0;
+   --accent-color-fade-text: #a5b4cf;
 
    /* spacing */
    --lg-spacing: 2.25rem;
    --md-spacing: 1.25rem;
-   --sm-spacing: 0.5rem;
+   --sm-spacing: .7rem;
 
    /* width */
-   --span-width: calc(80% / 1024px);
+   --span-width-max: 920px;
 
    /* fonts */
    --text-xs: 0.75rem;
@@ -28,13 +31,14 @@
    --text-sm: 0.875rem;
    --ln-sm: 1.25rem;
 
-   --text-md: 1rem;
+   --text-md: 1.5rem;
    --ln-md: 1.5rem;
 
-   --text-lg: 1.25rem;
+   --text-lg: 2.25rem;
    --ln-lg: 1.75rem;
 }
 
 body {
-   font-family: 'Roboto', sans-serif;
+   /* font-family: 'Roboto', sans-serif; */
+   font-family: 'Archivo', sans-serif;
 }

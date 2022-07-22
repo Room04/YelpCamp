@@ -11,3 +11,228 @@ use the following
 @media (min-width: 1024px) {...} - for large screens (Desktop)
 
  */
+
+
+/* page reset */
+.span-max {
+   max-width: var(--span-width-max);
+   margin: auto;
+}
+
+.mid-padding{
+   padding-left: var(--md-spacing);
+   padding-right: var(--md-spacing);
+}
+
+section {
+   margin-bottom: var(--lg-spacing);
+}
+
+.in-flex {
+   display: flex;
+   gap: var(--sm-spacing);
+   align-items: center;
+}
+
+.btn {
+   padding: .7rem 1.5rem;
+   border-radius: 3px;
+   border: none;
+}
+
+/* ************ */
+
+/* navbar */
+nav {
+   margin-bottom: var(--sm-spacing);
+}
+.nav-navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--md-spacing);
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--accent-color-fade-text);
+   transition: color 300ms ease-in-out;
+}
+
+.nav-link:hover {
+   color: var(--accent-color);
+}
+
+.btn-dark {
+   background-color: var(--accent-color);
+   color: #fff;
+}
+
+.navbar-right {
+   position: relative;
+}
+
+.hambugger  {
+   background-color: var(--accent-color-fade);
+   height: 2.2rem;
+   border-radius: 5px;
+   padding: 2px;
+}
+
+:is(.hambugger) img {
+   height: 100%;
+   width: 100%;
+}
+
+.hambug-links {
+   display: flex;
+   flex-direction: column;
+   gap: var(--sm-spacing);
+   background-color: #fff;
+   padding: var(--sm-spacing);
+   border-radius: 5px;
+   width: 10rem;
+   outline: var(--accent-color) .7px solid;
+
+   position: absolute;
+   right: 0;
+   top: calc(var(--md-spacing) + var(--md-spacing))
+}
+:is(.hambug-links) a {
+   color: var(--accent-color);
+   font-size: var(--text-sm);
+}
+
+.dissapear {
+   display: none;
+}
+.no-show {
+   display: none;
+}
+
+@media (min-width: 1024px) {
+   .dissapear {
+      display: block;
+   }
+   .hambugger {
+      display: none;
+   }
+   .hambug-links {
+      display: none;
+   }
+}
+
+/* ************ */
+
+/* banner section */
+.jumbotron {
+   background-color: var(--accent-color-fade);
+   padding: var(--lg-spacing);
+   border-radius: 5px;
+}
+:is(.jumbotron) h1 {
+   font-size: var(--text-lg);
+}
+:is(.jumbotron) form {
+   margin-bottom: var(--md-spacing);
+   display: flex;
+   flex-direction: column;
+   gap: var(--sm-spacing);
+}
+:is(.jumbotron) input, button {
+   font-family: 'Roboto', sans-serif;
+   font-size: var(--text-sm);
+}
+:is(.jumbotron) input:focus {
+   outline: var(--accent-color) .8px solid;
+}
+.jumbotron-span {
+   max-width: 400px;
+}
+.jumbotron-link {
+   color: var(--accent-color);
+   font-size: var(--text-sm);
+}
+.search-sect {
+   position: relative;
+}
+.search-inp {
+   width: 100%;
+}
+.s-icon {
+   position: absolute;
+   top: var(--sm-spacing);
+   left: calc(var(--sm-spacing) - 6px)
+}
+
+
+@media (min-width: 768px) {
+   :is(.jumbotron) form {
+      flex-direction: row;
+   }
+}
+/* ************ */
+
+/* campgrounds section */
+.campgrounds   {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+   gap: var(--md-spacing);
+}
+.capmground {
+   margin-bottom: var(--md-spacing);
+   padding: var(--md-spacing);
+   outline: .4px var(--accent-color-fade) solid;
+   border-radius: 5px;
+}
+.camp-icon {
+   width: 100%;
+   height: 11.7rem;
+}
+.camp-name {
+   --text-md: 1.2rem;
+   font-weight: bold;
+   font-size: var(--text-md);
+   line-height: var(--ln-sm);
+}
+:is(.camp-icon) img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+}
+:is(.camp-detail) p {
+   font-size: var(--text-sm);
+}
+:is(.camp-link) a {
+   text-decoration: none;
+   color: var(--accent-color);
+   font-size: var(--text-sm);
+   display: block;
+   text-align: center;
+   font-size: var(--text-xs);
+
+   transition: background-color 350ms ease-in-out;
+}
+:is(.camp-link) a:hover {
+   color: #fff;
+   background-color: var(--accent-color);
+}
+.btn-dark-outline {
+   outline: var(--accent-color-fade) .7px solid;
+   border-bottom: rgb(230, 228, 228) .8px solid;
+   border-right: rgb(230, 228, 228) .8px solid;
+}
+.btn-dark-outline:hover {
+   border: none;
+   border-bottom: var(--accent-color) .8px solid;
+}
+/* ************ */
+
+/* footer */
+footer {
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--lg-spacing);
+}
+/* ************ */
