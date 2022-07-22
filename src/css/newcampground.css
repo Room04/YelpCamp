@@ -138,7 +138,7 @@ nav {
    margin-bottom: var(--md-spacing);
 }
 :is(.in-form-col) input {
-   --accent-color-fade: rgb(233, 219, 219);
+   --accent-color-fade: rgb(224, 224, 224);
    height: var(--lg-spacing);
    border-radius: 5px;
    border: none;
@@ -155,7 +155,7 @@ nav {
 }
 :is(.in-form-col) #desc {
    height: 12rem;
-   background-color: rgb(233, 219, 219);
+   background-color: rgb(224, 224, 224);
    border: none;
    padding: var(--md-spacing);
    border-radius: 5px;
