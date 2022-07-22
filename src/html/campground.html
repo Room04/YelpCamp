@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,122 @@
    <link rel="stylesheet" href="/src/css/campground.css">
    <script src="/src/js/campground.js" defer></script>
 </head>
+
 <body>
-   
+   <!-- TODO: Nav Bar -->
+   <nav class="mid-padding">
+      <div class="nav-navbar span-max">
+         <div class="navbar-left in-flex">
+            <div class="nav-icon">
+               <img src="/Assets/Logo.svg" alt="yelpcamp logo">
+            </div>
+            <div class="nav-detail">
+               <a href="#" class="nav-link dissapear">Home</a>
+            </div>
+         </div>
+         <div class="navbar-right in-flex">
+            <a href="#" class="nav-link dissapear nav-login">Log in</a>
+            <a href="#" class="nav-link dissapear btn btn-dark">Create an Account</a>
+            <a href="#" class="nav-link hambugger" id="hamburg">
+               <img src="/Assets/Hamburger Menu.svg" alt="yelpcamp hambugger menu">
+            </a>
+            <div class="hambug-links no-show" id="hm-links">
+               <a href="#">Log in</a></li>
+               <a href="#">Create an account</a></li>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- navbar -->
+
+   <div class="camp-body-main">
+      <div class="camp-content">
+         <div class="camp-main">
+            <div class="camp-main-img">
+               <img src="../../Assets/Camp Images/High Quality Images/Mount Ulap.png" />
+            </div>
+            <div class="camp-title-cont">
+               <div class="camp-header">
+                  <h2 class="camp-title">Mount Ulap</h2>
+               </div>
+               <div class="camp-price">
+                  <h3>$104.99/night</h3>
+               </div>
+            </div>
+            <div class="camp-info">
+               <p class="camp-info-p">
+                  Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet,
+                  Philippines that offers the chance to see wild life and is rated as moderate. The trail is primarily
+                  used for hiking.
+               </p>
+               <div class="camp-info-i">
+                  Submitted by Andrew Mike
+               </div>
+            </div>
+         </div>
+
+         <div class="camp-reviews">
+            <div class="camp-single-review">
+               <div class="camp-review-head">
+                  <h3 class="reviewer-name">Adam Jones</h3>
+                  <h3 class="review-time">13h ago</h3>
+               </div>
+               <div class="camp-review-p">
+                  Honestly one of the best experiences ever, took us a while to figure out how to get there but it was
+                  amazing!
+               </div>
+               <hr class="h-ruler">
+            </div>
+            <div class="camp-single-review">
+               <div class="camp-review-head">
+                  <h3 class="reviewer-name">Isaac Dylan</h3>
+                  <h3 class="review-time">1 day ago</h3>
+               </div>
+               <div class="camp-review-p">
+                  Travelling changes you as a person, you gain more perspective, this is the perfect spot to do that.
+               </div>
+               <!-- <div class="camp-review-hor-rule"></div> -->
+
+               <hr class="h-ruler">
+            </div>
+            <div class="camp-single-review">
+               <div class="camp-review-head">
+                  <h3 class="reviewer-name">Hudson Luca</h3>
+                  <h3 class="review-time">1 day ago</h3>
+               </div>
+               <div class="camp-review-p">
+                  Definitely recommend going there, not too far and not a lot of people to ruin the experience.
+               </div>
+               <hr class="h-ruler">
+
+            </div>
+            <!-- TODO: Add a button with an svg inside it. -->
+            <div class="camp-review-bottom">
+
+               <div class="camp-button">
+                  <div class="message-svg">
+                     <img src="/Assets/Chat Bubble.svg" alt="Leave a Review"/>
+                  </div>
+                  <div class="message-cta">Leave a Review</div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+
+      <div class="camp-map">
+         <img src="../../Assets/Map.png" alt="Mount Ulap Map"/>
+      </div>
+   </div>
+
+
 </body>
+<footer class="yelp-footer">
+   <div class="yelp-logo">
+     <img src="/Assets/Logo.svg" alt="Yelpcamp Logo"/>
+         
+   </div>
+</footer>
+
 </html>
