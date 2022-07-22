@@ -5,6 +5,114 @@
   margin: 0px;
 }
 
+/* Nav Bar */
+nav {
+  margin-bottom: var(--sm-spacing);
+  width: 100%;
+  
+}
+
+.navbar-left{
+  display: flex;
+  flex-direction: row;
+  margin-left: 4rem;
+}
+
+.nav-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--md-spacing);
+  padding-bottom: var(--md-spacing);
+}
+
+.nav-link {
+  justify-content:center;
+  text-decoration: none;
+  margin-left: 1rem;
+  color: var(--accent-color-fade-text);
+  transition: color 300ms ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--accent-color-fade);
+}
+
+.btn-dark {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.625rem;
+}
+
+.navbar-right {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-right: 4rem;
+}
+
+.hambugger  {
+  background-color: var(--accent-color-fade);
+  height: 2.2rem;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+:is(.hambugger) img {
+  height: 100%;
+  width: 100%;
+}
+
+.hambug-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm-spacing);
+  background-color: #fff;
+  padding: var(--sm-spacing);
+  border-radius: 5px;
+  width: 10rem;
+  outline: var(--accent-color) .7px solid;
+
+  position: absolute;
+  right: 0;
+  top: calc(var(--md-spacing) + var(--md-spacing))
+}
+:is(.hambug-links) a {
+  color: var(--accent-color);
+  font-size: var(--text-sm);
+}
+
+.dissapear {
+  display: none;
+}
+.no-show {
+  display: none;
+}
+ 
+.nav-detail{
+  display: grid;
+  place-items: center;
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
+.nav-login{
+  margin-top: .5rem;
+}
+
+@media (min-width: 1024px) {
+ 
+  .dissapear {
+     display: block;
+  }
+  .hambugger {
+     display: none;
+  }
+  .hambug-links {
+     display: none;
+  }
+}
+/* ************ */
 /***
 **
 *
@@ -17,6 +125,10 @@ use the following
 
 /* Desktop */
 @media (max-width: 9024px) {
+  .yelp-footer{
+    width: 100%;
+    padding: 3.0rem ;
+  }
 
   .camp-body-main {
     display: flex;
@@ -181,6 +293,13 @@ use the following
     padding: 0rem;
   }
 
+  .navbar-left{
+    margin-left: 3rem;
+  }
+  .navbar-right{
+    margin-right: 2rem;
+  }
+
   .camp-body-main {
     display: flex;
     flex-direction: column;
@@ -293,6 +412,12 @@ use the following
 @media(max-width: 40px) {
   * {
     margin: 0rem;
+  }
+  .navbar-left{
+    margin-left: 3rem;
+  }
+  .navbar-right{
+    margin-right: 2rem;
   }
 
   body {
