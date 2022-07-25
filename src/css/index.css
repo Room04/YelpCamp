@@ -73,6 +73,7 @@ nav {
 /* hero image */
 .hero-img {
    height: 45vh;
+   width: 100%;
    background-image: url('/Assets/Hero\ Image\ \(Tablet\ and\ Mobile\).jpg');
    background-position: center;
    background-size: cover;
