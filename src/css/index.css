@@ -11,3 +11,155 @@ use the following
 @media (min-width: 1024px) {...} - for large screens (Desktop)
 
  */
+
+/* page reset */
+body {
+   margin: 0;
+}
+ul,li { 
+   list-style-type: none;
+   list-style-position:inside;
+   margin:0;
+   padding:0; 
+}
+
+.span-max {
+   max-width: var(--span-width-max);
+   margin: auto;
+}
+
+.mid-padding{
+   padding-left: var(--md-spacing);
+   padding-right: var(--md-spacing);
+}
+
+section {
+   margin-bottom: var(--lg-spacing);
+}
+
+.in-flex {
+   display: flex;
+   gap: var(--sm-spacing);
+   align-items: center;
+}
+
+.btn {
+   padding: .7rem 1.5rem;
+   border-radius: 3px;
+   border: none;
+   text-decoration: none;
+}
+
+/* ************ */
+
+.btn-dark {
+   background-color: var(--accent-color);
+   color: #fff;
+}
+
+/* navbar */
+nav {
+   margin-bottom: var(--sm-spacing);
+}
+.nav-navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--md-spacing);
+}
+/* ************ */
+
+/* hero image */
+.hero-img {
+   height: 45vh;
+   width: 100%;
+   background-image: url('/Assets/Hero\ Image\ \(Tablet\ and\ Mobile\).jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+/* ************ */
+
+/* hero section detail */
+.hero-details-cont {
+   padding-left: var(--md-spacing);
+   padding-right: var(--md-spacing);
+}
+:is(.hero-details) h1 {
+   font-size: var(--text-lg);
+   width: 24rem;
+}
+:is(.hero-details) li {
+   margin-top: var(--sm-spacing);
+   margin-bottom: var(--sm-spacing);
+   list-style: none;
+   display: flex;
+   align-items: center;
+   gap: var(--sm-spacing);
+}
+:is(.hero-details) li::before {
+   content: '';
+   height: 1.6rem;
+   width: 1.5rem;
+   background-image: url('/Assets/Checkmark.svg');
+   background-repeat: no-repeat;
+}
+.hero-action{
+   margin-top: var(--lg-spacing);
+   margin-bottom: var(--lg-spacing);
+}
+
+/* --------- */
+:is(.split-container)::after {
+   content: '';
+   height: 100%;
+   width: 50%;
+   background-image: url('/Assets/Hero\ Image.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.split-container::after {
+   display: none;
+}
+/* --------- */
+
+@media (min-width: 768px) {
+   :is(.hero-details) h1 {
+      width: 50%;
+   }
+}
+@media (min-width: 1024px) {
+   :is(.hero-details) h1 {
+      width: 100%;
+      font-size: calc(var(--text-lg) + .8rem);
+   }
+   .hero-img {
+      display: none;
+   }
+   .split-container::after {
+      display: block;
+   }
+   .split-container {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+   }
+   .split-inner {
+      align-self: flex-start;
+      height: 100%;
+      width: 50%;
+      padding-left: calc(var(--lg-spacing) + var(--lg-spacing));
+      padding-right: calc(var(--lg-spacing) + var(--lg-spacing));
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: flex-start;
+   }
+   .hero-details {
+      align-items: center;
+   }
+}
+/* *********** */
