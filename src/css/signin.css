@@ -4,526 +4,6 @@ body {
     padding: 0rem;
     margin: 0rem;
 }
-
-/* * {
-    outline: 1px gray solid;
-} */
-
-/***
-**
-*
-when creating break point or a media query
-use the following
-
-@media (min-width: 640px) {...} - for small screens (mobile)
-@media (min-width: 768px) {...} - for medium screens (Tablet)
-@media (min-width: 1024px) {...} - for large screens (Desktop)
-
- */
-/* Desktop */
-
-
-@media (min-width: 1024px) {
-   body {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .signin-main-1 {
-        height: 100%;
-        width: 100%;
-        padding: 2rem;
-        margin: 0rem;
-        display: grid;
-        place-items: center;
-        padding-bottom: 25%;
-    }
-
-    .signin-main-2 {
-        width: 100%;
-        padding: 0rem;
-        margin: 0rem;
-        height: 100%; 
-        display: grid;
-        place-items: center; 
-        background-color: rgb(255, 254, 224);
-        padding-bottom: 25%;
-        padding-top: 15%;
-       
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin: 0rem;
-        margin-bottom: 5rem !important;
-    }
-
-    .back-to-campgrounds {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .back-arrow {
-        color: gray;
-        display: grid;
-        place-content: center;
-        margin-right: .1rem;
-        font-size: 1rem;
-    }
-
-    .back-to-campgrounds-text {
-        color: gray;
-        display: grid;
-        place-content: center;
-        font-size: 1rem;
-    }
-
-    .signin-main {
-        display: grid;
-        place-items: center;
-        width: 100%;
-        margin: 0rem;
-        padding: 0rem;
-    }
-
-    .main-form {
-         width: 100% !important;
-         padding: 0px;
-    }
-
-    .sigin-form-main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .signin-form{
-        width: 100%;
-        margin: 0rem;
-        padding: 0rem;
-    }
-
-    .signin-title {
-        color: black;
-        font-weight: 600;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .login-btn {
-        background-color: black;
-        color: white;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        padding: 1.2rem;
-        font-size: 1rem;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        border-radius: .2rem;
-    }
-
-    input {
-        width: 100%;
-        padding: 1rem 2rem;
-        margin: .5rem 0rem;
-        border-radius: .2rem;
-        box-sizing: border-box;
-        border: none;
-        color: gray;
-        background-color: rgb(214, 214, 214);
-    }
-
-    .create-acc {
-        text-align: left;
-        margin-top: .2rem;
-        margin-bottom: .2rem;
-    }
-
-    span {
-        color: rgb(0, 221, 255);
-        text-decoration: underline;
-    }
-
-    .signin-reviews {
-        display: grid;
-        place-items: center;
-        background-color: rgb(255, 254, 224);
-        width: 100%;
-        height: 100%;
-        /* margin-top: 1.5rem; */
-        padding-top: 50%;
-        padding-bottom: 50%;
-        
-    }
-
-    .review-card {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-left: 25%;
-        padding-right: 25%;       
-    }
-
-    .review {
-        color: black;
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .reviewer {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-
-    }
-    .signin-form{
-        width: 100%;
-    }
-
-    .review-info {
-        display: flex;
-        flex-direction: column;
-        margin-left: 1rem;
-    }
-
-    .reviewer-name {
-        color: black;
-        font-weight: 500;
-        font-size: 1rem;
-    }
-
-    .reviewer-title {
-        color: black;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    label {
-        color: black;
-        font-weight: 500;
-        margin-bottom: .3rem;
-        margin-top: .3rem;
-    }
-    
-    form{
-        width: 100%;
-    }
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-    .signin-body {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin: 0rem;
-        margin-bottom: 2rem;
-    }
-
-    .back-to-campgrounds {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .back-arrow {
-        color: gray;
-        display: grid;
-        place-content: center;
-        margin-right: .1rem;
-        font-size: 1rem;
-    }
-
-    .back-to-campgrounds-text {
-        color: gray;
-        display: grid;
-        place-content: center;
-        font-size: 1rem;
-    }
-
-    .signin-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin: 0rem;
-        padding: 2rem;
-    }
-
-    .main-form {
-        display: flex;
-        flex-direction: column;
-        float: left;
-        width: 80%;
-    }
-
-    .sigin-form-main {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .signin-title {
-        color: black;
-        font-weight: 600;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .login-btn {
-        background-color: black;
-        color: white;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        padding: 1.2rem;
-        font-size: 1rem;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        border-radius: .2rem;
-    }
-
-    input {
-        width: 100%;
-        padding: 1rem 2rem;
-        margin: .5rem 0rem;
-        border-radius: .2rem;
-        box-sizing: border-box;
-        border: none;
-        color: gray;
-        background-color: rgb(214, 214, 214);
-    }
-
-    .create-acc {
-        text-align: left;
-        margin-top: .2rem;
-        margin-bottom: .2rem;
-    }
-
-    span {
-        color: rgb(0, 221, 255);
-        text-decoration: underline;
-    }
-
-    .signin-reviews {
-        display: grid;
-        place-items: center;
-        background-color: rgb(255, 254, 224);
-        width: 100%;
-        margin-top: 1.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    .review-card {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .review {
-        color: black;
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .reviewer {
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-
-    }
-
-    .review-info {
-        display: flex;
-        flex-direction: column;
-        margin-left: 1rem;
-    }
-
-    .reviewer-name {
-        color: black;
-        font-weight: 500;
-        font-size: 1rem;
-    }
-
-    .reviewer-title {
-        color: black;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    label {
-        color: black;
-        font-weight: 500;
-        margin-bottom: .3rem;
-        margin-top: .3rem;
-    }
-}
-
-/* Mobile */
-@media (min-width: 640px) {
-    .signin-body {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: .1rem;
-
-    }
-
-    .back-to-campgrounds {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .back-arrow {
-        color: gray;
-        display: grid;
-        place-content: center;
-        margin-right: .1rem;
-        font-size: 1rem;
-    }
-
-    .back-to-campgrounds-text {
-        color: gray;
-        display: grid;
-        place-content: center;
-        font-size: .8rem;
-    }
-
-    .signin-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* width: 80%; */
-        margin: 0rem;
-        padding: .6rem;
-    }
-
-    .main-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sigin-form-main {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .signin-title {
-        color: black;
-        font-weight: 600;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .login-btn {
-        background-color: black;
-        color: white;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        padding: 1.2rem;
-        font-size: 1rem;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        border-radius: .2rem;
-    }
-
-    input {
-        width: 100%;
-        padding: 1rem 2rem;
-        margin: .5rem 0rem;
-        border-radius: .2rem;
-        box-sizing: border-box;
-        border: none;
-        color: gray;
-        background-color: rgb(214, 214, 214);
-    }
-
-    .create-acc {
-        text-align: left;
-        margin-top: .2rem;
-        margin-bottom: .2rem;
-    }
-
-    span {
-        color: rgb(0, 221, 255);
-        text-decoration: underline;
-    }
-
-    .signin-reviews {
-        display: grid;
-        place-items: center;
-        background-color: rgb(255, 254, 224);
-        width: 100%;
-        margin-top: 1.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    .review-card {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .review {
-        color: black;
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .reviewer {
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-
-    }
-
-    .review-info {
-        display: flex;
-        flex-direction: column;
-        margin-left: 1rem;
-    }
-
-    .reviewer-name {
-        color: black;
-        font-weight: 500;
-        font-size: 1rem;
-    }
-
-    .reviewer-title {
-        color: black;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    label {
-        color: black;
-        font-weight: 500;
-        margin-bottom: .3rem;
-        margin-top: .3rem;
-    }
-}
-
 nav {
     display: flex;
     flex-direction: row;
@@ -669,3 +149,229 @@ label {
     margin-bottom: .3rem;
     margin-top: .3rem;
 }
+/* * {
+    outline: 1px gray solid;
+} */
+
+/***
+**
+*
+when creating break point or a media query
+use the following
+
+@media (min-width: 640px) {...} - for small screens (mobile)
+@media (min-width: 768px) {...} - for medium screens (Tablet)
+@media (min-width: 1024px) {...} - for large screens (Desktop)
+
+ */
+/* Desktop */
+
+
+@media (min-width: 1024px) {
+   body {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .signin-main-1 {
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        margin: 0rem;
+        display: grid;
+        place-items: center;
+        padding-bottom: 25%;
+    }
+
+    .signin-main-2 {
+        width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+        height: 100%; 
+        display: grid;
+        place-items: center; 
+        background-color: rgb(255, 254, 224);
+        padding-bottom: 25%;
+        padding-top: 15%;
+       
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0rem;
+        margin-bottom: 5rem !important;
+    }
+
+    .back-to-campgrounds {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .back-arrow {
+        color: gray;
+        display: grid;
+        place-content: center;
+        margin-right: .1rem;
+        font-size: 1rem;
+    }
+
+    .back-to-campgrounds-text {
+        color: gray;
+        display: grid;
+        place-content: center;
+        font-size: 1rem;
+    }
+
+    .signin-main {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .main-form {
+         width: 100% !important;
+         padding: 0px;
+    }
+
+    .sigin-form-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .signin-form{
+        width: 100%;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .review-card{
+        width: 50%;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .signin-body {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .back-to-campgrounds {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .back-arrow {
+        color: gray;
+        display: grid;
+        place-content: center;
+        margin-right: .1rem;
+        font-size: 1rem;
+    }
+
+    .back-to-campgrounds-text {
+        color: gray;
+        display: grid;
+        place-content: center;
+        font-size: 1rem;
+    }
+
+    .signin-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0rem;
+        padding: 2rem;
+    }
+
+    .main-form {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 80%;
+    }
+
+    .sigin-form-main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    
+}
+
+/* Mobile */
+@media (min-width: 640px) {
+    .signin-body {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: .1rem;
+
+    }
+
+    .back-to-campgrounds {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .back-arrow {
+        color: gray;
+        display: grid;
+        place-content: center;
+        margin-right: .1rem;
+        font-size: 1rem;
+    }
+
+    .back-to-campgrounds-text {
+        color: gray;
+        display: grid;
+        place-content: center;
+        font-size: .8rem;
+    }
+
+    .signin-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* width: 80%; */
+        margin: 0rem;
+        padding: .6rem;
+    }
+
+    .main-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sigin-form-main {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+}
+
