@@ -11,3 +11,18 @@ use the following
 @media (min-width: 1024px) {...} - for large screens (Desktop)
 
  */
+
+ /* navbar */
+nav {
+   margin-bottom: var(--sm-spacing);
+}
+.nav-navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: var(--md-spacing);
+   padding-bottom: var(--md-spacing);
+}
+
+
+/* ************ */
