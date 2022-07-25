@@ -154,9 +154,12 @@ nav {
       padding-left: calc(var(--lg-spacing) + var(--lg-spacing));
       padding-right: calc(var(--lg-spacing) + var(--lg-spacing));
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: flex-start;
+   }
+   .hero-details {
+      align-items: center;
    }
 }
 /* *********** */
