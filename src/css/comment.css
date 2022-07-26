@@ -1,8 +1,8 @@
 @import url(/src/css/reset.css);
-
+/* 
 *{
     outline: 0.006rem solid gray;
-}
+} */
 
 body{
     display: flex;

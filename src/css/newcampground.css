@@ -160,7 +160,7 @@ nav {
    padding: var(--md-spacing);
    border-radius: 5px;
    font-family: 'Roboto', sans-serif;
-   font-size: var(--text-md);
+   font-size: var(--text-sm);
 }
 :is(.in-form-col) #desc:focus {
    outline: var(--accent-color) .7px solid;
