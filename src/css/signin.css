@@ -83,6 +83,7 @@ input {
     border: none;
     color: gray;
     background-color: rgb(214, 214, 214);
+    font-family: 'Archivo', sans-serif;
 }
 
 .create-acc {

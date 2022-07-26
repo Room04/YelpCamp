@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +9,50 @@
    <link rel="stylesheet" href="/src/css/comment.css">
    <script src="/src/js/comment.js"></script>
 </head>
+
 <body>
-      <!-- navbar -->
-      <nav class="mid-padding">
-         <div class="nav-navbar span-max">
-            <div class="navbar-left in-flex">
-               <div class="nav-icon">
-                  <img src="/Assets/Logo.svg" alt="yelpcamp logo">
-               </div>
-               <div class="nav-detail">
-                  <a href="#" class="nav-link dissapear">Home</a>
-               </div>
-            </div>
-            <div class="navbar-right in-flex">
-               <a href="#" class="nav-link dissapear">johndoe</a>
-               <a href="#" class="nav-link dissapear">Log out</a>
-               <a href="#" class="nav-link hambugger" id="hamburg">
-                  <img src="/Assets/Hamburger Menu.svg" alt="yelpcamp hambugger menu">
-               </a>
-               <div class="hambug-links no-show" id="hm-links">
-                  <a href="#">johndoe</a></li>
-                  <a href="#">Log out</a></li>
-               </div>
+   <!-- navbar -->
+   <nav class="mid-padding">
+      <div class="nav-navbar span-max">
+         <div class="navbar-left in-flex">
+            <a href="/src/html/index.html" class="nav-icon">
+               <img src="/Assets/Logo.svg" alt="yelpcamp logo">
+            </a>
+            <div class="nav-detail">
+               <a href="/src/html/search-login.html" class="nav-link dissapear">Home</a>
             </div>
          </div>
-      </nav>
-      
+         <div class="navbar-right in-flex">
+            <a href="#" class="nav-link dissapear">johndoe</a>
+            <a href="/src/html/signin.html" class="nav-link dissapear">Log out</a>
+            <a href="#" class="nav-link hambugger" id="hamburg">
+               <img src="/Assets/Hamburger Menu.svg" alt="yelpcamp hambugger menu">
+            </a>
+            <div class="hambug-links no-show" id="hm-links">
+               <a href="#">johndoe</a></li>
+               <a href="/src/html/signin.html">Log out</a></li>
+            </div>
+         </div>
+      </div>
+   </nav>
+
    <div class="comment-main">
       <div class="comment-title">Add New Comment</div>
       <div class="comment-desc">Description</div>
       <div class="comment-input">
-        <form action="">
-         <textarea name="" id=""  placeholder="This was probably the best camp I've visited this past year, definitely recommend visiting any time soon."></textarea>
-        </form>
+         <form action="">
+            <textarea name="" id=""
+               placeholder="This was probably the best camp I've visited this past year, definitely recommend visiting any time soon."></textarea>
+         </form>
       </div>
-      <div class="comment-button">Post Comment</div>
+      <a href="/src/html/campground.html" class="comment-button">Post Comment</a>
+   </div>
 
-  </div>
-  
 </body>
 <footer class="comment-footer">
    <div class="yelp-camp-logo">
-      <img src="/Assets/Logo.svg"/>
+      <img src="/Assets/Logo.svg" />
    </div>
 </footer>
+
 </html>
