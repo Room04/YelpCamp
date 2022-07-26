@@ -1,16 +1,16 @@
 @import url(/src/css/reset.css);
 
 body {
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: .2rem;
-    margin-bottom: 2rem;
+    margin: 2%;
+    margin-bottom: 10%;
 }
 
 .back-to-campgrounds {
@@ -151,9 +151,9 @@ label {
     margin-top: .3rem;
 }
 
-/* * {
+ * {
     outline: 1px gray solid;
-} */
+} 
 
 /***
 **
@@ -203,8 +203,7 @@ use the following
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        margin: 0rem;
-        margin-bottom: 5rem !important;
+        margin-bottom: 5rem ;
     }
 
     .back-to-campgrounds {
@@ -273,7 +272,7 @@ use the following
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        width: 97%;
         margin: 1rem;
         margin-bottom: 2rem !important;
     }
@@ -336,7 +335,7 @@ use the following
         flex-direction: row;
 
     }
-
+   
     .back-arrow {
         color: gray;
         display: grid;
