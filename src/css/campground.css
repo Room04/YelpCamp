@@ -108,6 +108,19 @@ nav {
      display: none;
   }
 }
+
+.camp-button .message-cta {
+  color: white;
+  display: grid;
+  place-items: center;
+  margin: 0.3125rem;
+}
+
+.camp-button .message-svg {
+  display: grid;
+  place-items: center;
+  margin: 0.3125rem;
+}
 /* ************ */
 /***
 **
@@ -248,18 +261,7 @@ use the following
     place-items: center;
   }
 
-  .camp-button .message-cta {
-    color: white;
-    display: grid;
-    place-items: center;
-    margin: 0.3125rem;
-  }
-
-  .camp-button .message-svg {
-    display: grid;
-    place-items: center;
-    margin: 0.3125rem;
-  }
+  
 
   .h-ruler {
     margin-top: var(--md-spacing);
