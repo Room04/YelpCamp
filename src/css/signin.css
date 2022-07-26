@@ -4,6 +4,10 @@ body {
     padding: 0rem;
     margin: 0rem;
 }
+.mid-padding{
+    padding-left: var(--md-spacing);
+    padding-right: var(--md-spacing);
+}
 
 nav {
     display: flex;
