@@ -62,6 +62,12 @@ nav {
 
 .nav-link:hover {
    color: var(--accent-color);
+   background-color: var(--accent-color-fade-text);
+}
+
+.nav-link:active {
+   color: var(--accent-color);
+   background-color: var(--accent-color-fade-text);
 }
 
 .btn-dark {
