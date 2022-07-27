@@ -119,6 +119,7 @@ nav {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   background-attachment: fixed;
 }
 
 .split-container::after {
@@ -134,7 +135,7 @@ nav {
 @media (min-width: 1024px) {
    :is(.hero-details) h1 {
       width: 100%;
-      font-size: calc(var(--text-lg) + .8rem);
+      font-size: var(--text-lg);
    }
    .hero-img {
       display: none;
