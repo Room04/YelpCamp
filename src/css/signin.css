@@ -4,6 +4,10 @@ body {
     padding: 0rem;
     margin: 0rem;
 }
+.mid-padding{
+    padding-left: var(--md-spacing);
+    padding-right: var(--md-spacing);
+}
 
 nav {
     display: flex;
@@ -11,6 +15,7 @@ nav {
     justify-content: space-between;
     margin: .2rem;
     margin-bottom: 2rem;
+    padding-top: var(--md-spacing);
 }
 
 .back-to-campgrounds {

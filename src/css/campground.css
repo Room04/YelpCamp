@@ -3,15 +3,15 @@
 
 /* Nav Bar */
 nav {
-  margin-bottom: var(--sm-spacing);
   width: 100%;
-  
+}
+.span-max {
+  max-width: var(--span-width-max);
+  margin: auto;
 }
 
 .navbar-left{
   display: flex;
-  flex-direction: row;
-  margin-left: 4rem;
 }
 
 .nav-navbar {
@@ -25,7 +25,7 @@ nav {
 .nav-link {
   justify-content:center;
   text-decoration: none;
-  margin-left: 1rem;
+  margin-left: .8rem;
   color: var(--accent-color-fade-text);
   transition: color 300ms ease-in-out;
 }
@@ -44,7 +44,6 @@ nav {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-right: 4rem;
 }
 
 .hambugger  {
@@ -99,13 +98,13 @@ nav {
 @media (min-width: 1024px) {
  
   .dissapear {
-     display: block;
+    display: block;
   }
   .hambugger {
-     display: none;
+    display: none;
   }
   .hambug-links {
-     display: none;
+    display: none;
   }
 }
 

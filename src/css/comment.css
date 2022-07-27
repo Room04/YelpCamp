@@ -22,8 +22,7 @@ use the following
  
 /* page reset */
 .span-max {
-    --span-width: 1200px;
-    max-width: var(--span-width);
+    max-width: var(--span-width-max);
     margin: auto;
  }
  
@@ -48,7 +47,7 @@ use the following
     border: none;
  }
 
- /* navbar */
+/* navbar */
 nav {
     margin-bottom: var(--sm-spacing);
  }
