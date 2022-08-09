@@ -1,4 +1,4 @@
-@import url(/src/css/reset.css);
+@import url(./reset.css);
 
 /***
 **
@@ -74,7 +74,7 @@ nav {
 .hero-img {
    height: 45vh;
    width: 100%;
-   background-image: url('/Assets/Hero\ Image\ \(Tablet\ and\ Mobile\).jpg');
+   background-image: url('../Assets/Hero\ Image\ \(Tablet\ and\ Mobile\).jpg');
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -102,7 +102,7 @@ nav {
    content: '';
    height: 1.6rem;
    width: 1.5rem;
-   background-image: url('/Assets/Checkmark.svg');
+   background-image: url('../Assets/Checkmark.svg');
    background-repeat: no-repeat;
 }
 .hero-action{
@@ -115,7 +115,7 @@ nav {
    content: '';
    height: 100%;
    width: 50%;
-   background-image: url('/Assets/Hero\ Image.jpg');
+   background-image: url('../Assets/Hero\ Image.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
